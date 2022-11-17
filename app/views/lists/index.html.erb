@@ -1,0 +1,14 @@
+<div>
+  <h1>LIST INDEX</h1>
+  <ul>
+  <% @lists.each do |list| %>
+    <li>
+    <%= link_to list.name, list_path(list.id) %>
+    </li>
+  <% end %>
+  </ul>
+</div>
+
+<div>
+  <%= link_to 'New List', new_list_path %>
+</div>

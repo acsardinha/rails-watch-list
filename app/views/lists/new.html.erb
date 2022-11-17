@@ -1,0 +1,10 @@
+<div>
+  <%= simple_form_for @list do |f| %>
+    <%= f.input :name %>
+    <%= f.submit 'Create' %>
+  <% end %>
+</div>
+
+<div>
+  <%= link_to 'Back', lists_path %>
+</div>
