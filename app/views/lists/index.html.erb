@@ -12,7 +12,7 @@
     <div class="row" style="width: 500px">
       <% @lists.each do |list| %>
         <div class="col" style="min-width: 300px;">
-          <div class="card-category m-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cloudinary_image(list) %>')">
+          <div class="card-category m-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cloudinary_image(list) %>)">
               <%= link_to list.name, list_path(list.id) %>
           </div>
         </div>
