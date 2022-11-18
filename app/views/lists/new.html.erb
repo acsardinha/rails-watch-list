@@ -2,8 +2,9 @@
   <div>
     <%= simple_form_for @list do |f| %>
       <%= f.input :name %>
+      <%= f.input :photo, as: :file %>
       <%= f.submit 'Create' %>
-    <% end %>
+      <% end %>
   </div>
 
   <div>

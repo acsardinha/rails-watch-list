@@ -9,10 +9,10 @@
 <div>
   <h1>LIST INDEX</h1>
   <div class="d-flex justify-content-center">
-    <div class="row">
+    <div class="row" style="width: 500px">
       <% @lists.each do |list| %>
-        <div class="col-4">
-          <div class="card-category m-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+        <div class="col" style="min-width: 300px;">
+          <div class="card-category m-2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cloudinary_image(list) %>')">
               <%= link_to list.name, list_path(list.id) %>
           </div>
         </div>
